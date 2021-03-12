@@ -1,0 +1,7 @@
+{
+  "name": "ifa",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
