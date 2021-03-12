@@ -22,6 +22,10 @@ const routes: Routes = [
     loadChildren: () =>
       import('./auth/forgot/forgot.module').then((m) => m.ForgotPageModule),
   },
+  {
+    path: 'forgot-confirm',
+    loadChildren: () => import('./auth/forgot-confirm/forgot-confirm.module').then( m => m.ForgotConfirmPageModule)
+  },
 ];
 
 @NgModule({

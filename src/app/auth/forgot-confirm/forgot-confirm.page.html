@@ -1,0 +1,42 @@
+<ion-content mode="ios">
+  <div class="forgot-confirm-page">
+    <div class="text-right">
+      <button class="btn btn-back" routerLink="/forgot">
+        <ion-icon name="arrow-back-outline"></ion-icon> Back
+      </button>
+    </div>
+    <div class="logo">
+      <img src="assets/imgs/logo-white.png" />
+    </div>
+    <p class="title">
+      Reset your password
+    </p>
+    <p class="text">
+      Enter a new password below:
+    </p>
+    <ion-card>
+      <ion-card-content>
+        <form (ngSubmit)="submitForm()">
+          <div class="form-label-group">
+            <label class="form-label">
+              New Password:
+            </label>
+            <input class="form-input form-control" type="password" type="password" required />
+          </div>
+          <div class="form-label-group">
+            <label class="form-label">
+              Confirm New Password:
+            </label>
+            <input class="form-input form-control" type="password" type="password" required />
+          </div>
+          <button class="btn btn-send">RESET PASSWORD</button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+    <div class="text-center">
+      <a href="javascript:;" class="forgot-text">
+        Need another code?
+      </a>
+    </div>
+  </div>
+</ion-content>

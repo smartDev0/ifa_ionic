@@ -16,14 +16,14 @@
     </p>
     <ion-card>
       <ion-card-content>
-        <form>
+        <form (ngSubmit)="submitForm()">
           <div class="form-label-group">
             <label class="form-label">
               Email Address:
             </label>
             <input class="form-input form-control" type="text" type="name" required />
           </div>
-          <button class="btn btn-send">SEND RESET CODE</button>
+          <button type="submit" class="btn btn-send">SEND RESET CODE</button>
         </form>
       </ion-card-content>
     </ion-card>

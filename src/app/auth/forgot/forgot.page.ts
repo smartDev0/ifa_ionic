@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forgot',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./forgot.page.scss'],
 })
 export class ForgotPage implements OnInit {
+  constructor(private route: Router) {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  submitForm() {
+    this.route.navigate(['/forgot-confirm']);
   }
-
 }
