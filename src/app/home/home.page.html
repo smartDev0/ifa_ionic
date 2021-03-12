@@ -1,20 +1,51 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-menu side="start" content-id="main-content" mode="ios">
+  <ion-header>
+    <ion-toolbar translucent>
+      <ion-list no-lines>
+        <ion-item no-lines lines="none">
+          <ion-avatar slot="start">
+            <img src="assets/imgs/avatar.png" />
+          </ion-avatar>
+          <ion-label>
+            <h3>Stephen Los</h3>
+            <p>Edit Profile</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item lines="none" class="item" *ngFor="let item of menuList" (click)="goLink(item.router)">
+        <ion-icon name="{{item.icon}}" slot="start"></ion-icon>
+        <ion-label>{{item.name}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+<div class="ion-page" id="main-content">
+  <ion-header mode="ios">
+    <ion-toolbar class="custom-toolbar">
+      <ion-buttons slot="start">
+        <ion-menu-button class="white"></ion-menu-button>
+        <ion-icon name="search-outline" class="search-icon" (click)="onToggleSearchBar()"></ion-icon>
+      </ion-buttons>
+      <ion-title>
+        <img src="assets/imgs/logo-white.png" class="logo" />
+      </ion-title>
+
+      <ion-buttons slot="end">
+        <ion-icon name="notifications-outline" class="notification-icon"></ion-icon>
+        <ion-avatar>
+          <img src="assets/imgs/avatar.png" />
+        </ion-avatar>
+      </ion-buttons>
+      <ion-searchbar *ngIf="searchFlag"></ion-searchbar>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  <ion-content mode="ios">
+    <ion-router-outlet></ion-router-outlet>
+  </ion-content>
+</div>

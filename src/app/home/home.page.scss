@@ -1,27 +1,36 @@
-#container {
-  text-align: center;
+.ion-page {
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  .custom-toolbar {
+    --background: linear-gradient(118deg, #f18c20, #f1b420);
+  }
+
+  .white {
+    --color: white !important;
+    color: white !important;
+  }
+  .search-icon {
+    --color: white !important;
+    color: white !important;
+    font-size: 20px;
+  }
+  .notification-icon {
+    --color: white !important;
+    color: white !important;
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+  ion-avatar{
+    width: 30px;
+    height: 30px;
+    margin-left: 6px;
+
+  }
+
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+.item {
+  font-size: 14px;
+  cursor: pointer;
 }
