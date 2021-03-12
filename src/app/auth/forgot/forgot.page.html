@@ -1,9 +1,32 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>forgot</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<ion-content mode="ios">
+  <div class="forgot-page">
+    <div class="text-right">
+      <button class="btn btn-back" routerLink="/login">
+        <ion-icon name="arrow-back-outline"></ion-icon> Back
+      </button>
+    </div>
+    <div class="logo">
+      <img src="assets/imgs/logo-white.png" />
+    </div>
+    <p class="title">
+      Forgot your password?
+    </p>
+    <p class="text">
+      Just enter your email address to continue
+    </p>
+    <ion-card>
+      <ion-card-content>
+        <form>
+          <div class="form-label-group">
+            <label class="form-label">
+              Email Address:
+            </label>
+            <input class="form-input form-control" type="text" type="name" required />
+          </div>
+          <button class="btn btn-send">SEND RESET CODE</button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
+

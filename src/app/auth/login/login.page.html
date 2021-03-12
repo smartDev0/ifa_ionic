@@ -11,25 +11,28 @@
     </p>
     <ion-card>
       <ion-card-content>
-        <div class="form-label-group">
-          <label class="form-label">
-            Username or Email Address:
-          </label>
-          <input class="form-input form-control" type="text" type="name"
-            required />
-        </div>
-        <div class="form-label-group">
-          <label class="form-label">
-            Password:
-          </label>
-          <input class="form-input form-control" type="password" type="password"
-            required />
-        </div>
-        <button class="btn btn-login">LOG IN</button>
+        <form>
+          <div class="form-label-group">
+            <label class="form-label">
+              Username or Email Address:
+            </label>
+            <input class="form-input form-control" type="text" type="name"
+              required />
+          </div>
+          <div class="form-label-group">
+            <label class="form-label">
+              Password:
+            </label>
+            <input class="form-input form-control" type="password"
+              type="password"
+              required />
+          </div>
+          <button class="btn btn-login">LOG IN</button>
+        </form>
       </ion-card-content>
     </ion-card>
     <div class="text-center">
-      <a href="javascript:;" class="forgot-text">
+      <a href="javascript:;" class="forgot-text" routerLink="/forgot">
         Forgot your password?
       </a>
     </div>
@@ -42,9 +45,7 @@
         <div>
           <button class="btn btn-subscriber">BECOME A SUBSCRIBER</button>
         </div>
-
       </div>
-
     </div>
   </div>
 

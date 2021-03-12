@@ -57,3 +57,15 @@
 .text-center{
   text-align: center!important;
 }
+.text-right{
+  text-align: right!important;
+}
+.btn-back{
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+      display: inline-flex;
+  padding: 10px;
+  align-items: center;
+  outline: none;
+}
