@@ -216,7 +216,7 @@
 .form-label-group {
 
   position: relative;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
 
   .form-label {
     font-size: 12px !important;
@@ -242,6 +242,7 @@
     border: 1px solid #dadada;
     color: #606060;
     outline: none;
+    height: 36px;
 
     &:focus {
       border: 1px solid #f18c20;
