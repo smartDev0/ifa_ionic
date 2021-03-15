@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { MenuController } from '@ionic/angular';
 @Component({
   selector: 'app-home',
@@ -10,58 +11,58 @@ export class HomePage {
     {
       icon: 'home-outline',
       name: 'Home',
-      router: 'home',
+      router: 'home/member',
     },
     {
       icon: 'people-outline',
       name: 'Groups',
-      router: 'groups',
+      router: 'home/group',
     },
     {
       icon: 'calendar-clear-outline',
       name: 'Events',
-      router: 'events',
+      router: 'home/event',
     },
     {
       icon: 'cart-outline',
       name: 'Store',
-      router: 'store',
+      router: 'home/store',
     },
     {
       icon: 'book-outline',
       name: 'Resource Library',
-      router: 'resource-library',
+      router: 'home/resource-library',
     },
 
     {
       icon: 'briefcase-outline',
       name: 'Job Listings',
-      router: 'job-listing',
+      router: 'home/job-listing',
     },
     {
       icon: 'bookmark-outline',
       name: 'Businesses',
-      router: 'business',
+      router: 'home/business',
     },
     {
       icon: 'star-outline',
       name: 'Sponsors',
-      router: 'sponsor',
+      router: 'home/sponsor',
     },
     {
       icon: 'alert-circle-outline',
       name: 'Help',
-      router: 'help',
+      router: 'home/help',
     },
     {
       icon: 'power-outline',
       name: 'Log Out',
-      router: 'logout',
+      router: 'login',
     },
   ];
 
   public searchFlag = false;
-  constructor(private menuController: MenuController) {}
+  constructor(private menuController: MenuController, private route: Router) {}
 
   openMenu() {
     this.menuController.open();
@@ -69,8 +70,9 @@ export class HomePage {
   goLink(path) {
     console.log(path);
     this.menuController.close();
+    this.route.navigate([path]);
   }
   onToggleSearchBar() {
-    this.searchFlag = !this.searchFlag
+    this.searchFlag = !this.searchFlag;
   }
 }

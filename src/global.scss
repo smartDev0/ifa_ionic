@@ -54,21 +54,140 @@
     border-color .15s ease-in-out,
     box-shadow .15s ease-in-out;
 }
-.text-center{
-  text-align: center!important;
+
+.text-center {
+  text-align: center !important;
 }
-.text-right{
-  text-align: right!important;
+
+.text-right {
+  text-align: right !important;
 }
-.btn-back{
+
+.btn-back {
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
-      display: inline-flex;
+  display: inline-flex;
   padding: 10px;
   align-items: center;
   outline: none;
+
 }
-.d-flex{
+
+.btn-standard {
+  border-color: #d1720d !important;
+  background-color: #f18c20 !important;
+  color: #fff;
+  outline: none;
+  height: 32px;
+  font-size: 11px;
+
+  &:hover {
+    background-color: #d1720d
+  }
+}
+
+.btn-standard-back {
+  border: 1px solid #999999;
+  background-color: transparent;
+  color: #999999;
+  display: inline-flex;
+  padding: 10px;
+  align-items: center;
+  outline: none;
+  height: 32px;
+  font-size: 11px;
+}
+
+.d-flex {
   display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.m-l-3 {
+  margin-left: 3px;
+}
+
+.post-input {
+  display: block;
+  width: 100%;
+  //  height: calc(1.1em + 1rem + 1px);
+  // padding: 0.7rem;
+  // font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #4e5154;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  -webkit-transition: border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: 1px solid #dadada;
+  color: #606060;
+  outline: none;
+  padding: 10px 40px 10px 32px;
+  font-size: 12px;
+  height: 36px;
+
+  &:focus {
+    border: 1px solid #f18c20;
+  }
+}
+
+.post-input-img {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.search-input-img {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  right: 10px;
+  margin-top: -31px;
+  cursor: pointer;
+}
+
+.footer {
+
+  background: linear-gradient(118deg, #f18c20, #f1b420);
+
+  p {
+    font-size: 6px;
+    color: white;
+    vertical-align: middle;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .social-link-group {
+    display: flex;
+    align-items: center;
+
+    .social-link {
+      width: 22px;
+      /* height: 20px; */
+      padding: 0 1px;
+    }
+  }
+
 }

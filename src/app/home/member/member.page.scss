@@ -1,28 +1,4 @@
-.post-input {
-  display: block;
-  width: 100%;
-  //  height: calc(1.1em + 1rem + 1px);
-  padding: 0.7rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.25;
-  color: #4e5154;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  -webkit-transition: border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  border: 1px solid #dadada;
-  color: #606060;
-  outline: none;
-  padding: 7px 40px 7px 36px;
 
-  &:focus {
-    border: 1px solid #f18c20;
-  }
-}
 
 .post-input-img {
   position: absolute;
