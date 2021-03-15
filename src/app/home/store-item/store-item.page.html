@@ -1,9 +1,65 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>store-item</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content fullscreen class="store-item">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <div class="d-flex justify-content-space-between align-items-center">
+          <button class="btn btn-standard-back m-l-3" routerLink="/home/group">
+            <ion-icon name="arrow-back-outline"></ion-icon> Back
+          </button>
 
-<ion-content>
-
+          <div>
+            <button class="btn btn-standard">
+              BUY NOW
+            </button>
+            <button class="btn btn-standard-setting m-l-3" routerLink="/home/group-setting/1">
+              Setting <ion-icon name="settings-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card mode="ios" class="text-center">
+          <img src="./assets/imgs/store-bg.png" />
+          <ion-card-header>
+            <ion-card-title>
+              IFA Compendiums
+            </ion-card-title>
+            <ion-card-subtitle class="standard-color">$45.00 inc gst</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-row>
+              <ion-col size="12">
+                <div class="card-text">
+                  These sturdy A4 size IFA branded compendiums feature:
+                  <br />
+                  • Zippered Koskin leather-look material with white stitching
+                  <br />
+                  • Internal gusseted pocket & 3 pen loops
+                  <br />
+                  • Business card holder & lined pad
+                  <br />
+                  Available to purchase for $45.00 inc gst & postage per item - for IFA MEMBERS ONLY
+                  <br />
+                  * Prices for Australia only.
+                  <br />
+                  ** POA for purchases that are required to be shipped internationally. Contact IFA National Office on
+                  admin@ifassociation.com.au or 02 4369 0055
+                </div>
+              </ion-col>
+              <ion-col size="12">
+                <button class="btn btn-standard w-100">
+                  BUY NOW
+                </button>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12" class="text-right">
+        <button class="btn btn-delete-group">REPORT</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
