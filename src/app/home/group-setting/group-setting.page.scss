@@ -14,7 +14,7 @@ ion-card {
   ion-card-content {
     padding: 12px 8px 12px 8px;
 
-    .item {
+    .card-item {
       display: flex;
       justify-content: space-between;
       padding: 5px 0;
@@ -72,7 +72,7 @@ ion-card {
   }
 
   .custom-item {
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2)!important;
     border-radius: 5px;
     font-size: 14px;
   }
