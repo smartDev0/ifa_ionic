@@ -69,6 +69,32 @@ const routes: Routes = [
             (m) => m.EventSettingPageModule
           ),
       },
+      {
+        path: 'store',
+        loadChildren: () =>
+          import('./store/store.module').then((m) => m.StorePageModule),
+      },
+      {
+        path: 'store-setting/:id',
+        loadChildren: () =>
+          import('./store-setting/store-setting.module').then(
+            (m) => m.StoreSettingPageModule
+          ),
+      },
+      {
+        path: 'store-create',
+        loadChildren: () =>
+          import('./store-create/store-create.module').then(
+            (m) => m.StoreCreatePageModule
+          ),
+      },
+      {
+        path: 'store-item/:id',
+        loadChildren: () =>
+          import('./store-item/store-item.module').then(
+            (m) => m.StoreItemPageModule
+          ),
+      },
     ],
   },
 ];
