@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-group',
@@ -27,7 +28,11 @@ export class GroupPage implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor(private route: Router) {}
 
   ngOnInit() {}
+
+  goItem() {
+    this.route.navigate(['/home/group-item/1']);
+  }
 }

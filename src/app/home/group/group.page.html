@@ -38,11 +38,11 @@
         <ion-card mode="ios">
           <img src="{{card.img}}" />
           <ion-card-header>
-            <ion-card-title>{{card.name}}</ion-card-title>
+            <ion-card-title (click)="goItem()">{{card.name}}</ion-card-title>
           </ion-card-header>
           <ion-card-content>
             <div class="d-flex justify-content-space-between align-items-center">
-              <div class="card-text">{{card.number}} Members</div>
+              <div class="card-text" >{{card.number}} Members</div>
               <button class="btn btn-join">
                 JOIN
               </button>

@@ -29,6 +29,20 @@ const routes: Routes = [
             (m) => m.GroupCreatePageModule
           ),
       },
+      {
+        path: 'group-item/:id',
+        loadChildren: () =>
+          import('./group-item/group-item.module').then(
+            (m) => m.GroupItemPageModule
+          ),
+      },
+      {
+        path: 'group-setting/:id',
+        loadChildren: () =>
+          import('./group-setting/group-setting.module').then(
+            (m) => m.GroupSettingPageModule
+          ),
+      },
     ],
   },
 ];
