@@ -81,7 +81,7 @@
   outline: none;
   height: 32px;
   font-size: 11px;
-
+text-transform: uppercase;
   &:hover {
     background-color: #d1720d
   }
@@ -97,6 +97,24 @@
   outline: none;
   height: 32px;
   font-size: 11px;
+  text-transform: uppercase;
+
+}
+
+.btn-standard-setting{
+  border: 1px solid #707070;
+  background-color: #707070;
+  color: white;
+  display: inline-flex;
+  padding: 10px;
+  align-items: center;
+  outline: none;
+  height: 32px;
+  font-size: 11px;
+  text-transform: uppercase;
+    ion-icon {
+      padding-left: 6px;
+    }
 }
 
 .d-flex {
