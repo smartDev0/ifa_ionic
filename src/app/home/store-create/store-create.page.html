@@ -1,9 +1,100 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>store-create</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<ion-content mode="ios" fullscreen class="store-create">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <div class="d-flex justify-content-space-between align-items-center">
+          <div class="title">Create a Product</div>
+          <div>
+            <button class="btn btn-standard-back m-l-3" routerLink="/home/store">
+              <ion-icon name="arrow-back-outline"></ion-icon> Back
+            </button>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card mode="ios">
+          <ion-card-content>
+            <form>
+              <ion-row>
+                <ion-col size="12">
+                  <div class="form-label-group">
+                    <label class="form-label">
+                      Product Title:
+                    </label>
+                    <input class="form-input form-control" type="text" type="name" required />
+                  </div>
+                </ion-col>
+                <ion-col size="8">
+                  <div class="form-label-group">
+                    <label class="form-label">
+                      Price:
+                    </label>
+                    <input class="form-input form-control" type="text" type="name" required />
+                  </div>
+                </ion-col>
+                <ion-col size="4">
+                  <div class="form-label-group">
+                    <label class="form-label">
+                      Currency:
+                    </label>
+                    <ion-select placeholder="Currency" interface="action-sheet" class="custom-select">
+                      <ion-select-option value="AUD">AUD</ion-select-option>
+                      <ion-select-option value="USD">USD</ion-select-option>
+                      <ion-select-option value="EUR">EUR</ion-select-option>
+                      <ion-select-option value="GBP">GBP</ion-select-option>
+                    </ion-select>
+                  </div>
+                </ion-col>
+                <ion-col size="12">
+                  <div class="form-label-group">
+                    <label class="form-label">
+                      Product Description:
+                    </label>
+                    <textarea class="form-textarea" rows="5"></textarea>
+                  </div>
+                </ion-col>
+                <ion-col size="12">
+                  <div class="form-label-group">
+                    <label class="form-label">
+                      Upload Images
+                    </label>
+                    <div>
+                      <button class="btn btn-upload">SELECT FILES</button>
+                    </div>
+                  </div>
+                </ion-col>
+                <ion-col size="12">
+                  <div class="form-label-group">
+                    <label class="form-label">
+                      Select Category:
+                    </label>
+                    <ion-item class="custom-item" lines="none" mode="md">
+                      <ion-label>Category</ion-label>
+                      <ion-select multiple="true" placeholder="Select Category">
+                        <ion-select-option value="Public">Public</ion-select-option>
+                        <ion-select-option value="Private">Private</ion-select-option>
+                      </ion-select>
+                    </ion-item>
+                  </div>
+                </ion-col>
+                <ion-col size="12">
+                  <div class="form-label-group">
+                    <ion-item lines="none" mode="md" class="custom-checkbox">
+                      <ion-label>
+                        Accept the <a href="javascript:;">terms of use</a> and <a href="javascript:;">privacy policy</a>
+                      </ion-label>
+                      <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+                    </ion-item>
+                  </div>
+                </ion-col>
+                <ion-col size="12"><button class="btn btn-standard w-100">SUBMIT PRODUCT TO STORE</button></ion-col>
+              </ion-row>
+            </form>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
