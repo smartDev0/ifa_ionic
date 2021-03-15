@@ -1,9 +1,124 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>event-item</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content fullscreen>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <div class="d-flex justify-content-space-between align-items-center">
+          <button class="btn btn-standard-back m-l-3" routerLink="/home/event">
+            <ion-icon name="arrow-back-outline"></ion-icon> Back
+          </button>
 
-<ion-content>
-
+          <div>
+            <button class="btn btn-standard">
+              BUY TICKETS
+            </button>
+            <button class="btn btn-standard-setting m-l-3" routerLink="/home/event-setting/1">
+              Setting <ion-icon name="settings-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-card mode="ios">
+          <img src="./assets/imgs/event-img.png" />
+          <ion-card-header>
+            <ion-card-title class="text-center">
+              QLD Division Golf Day
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-row>
+              <ion-col size="12">
+                <div class="d-flex standard-color">
+                  <div>
+                    <ion-icon name="today-outline"></ion-icon>
+                  </div>
+                  <ion-label>19th March 2021 10:45 AM - 9:00 PM</ion-label>
+                </div>
+              </ion-col>
+              <ion-col size="12">
+                <div class="d-flex">
+                  <div>
+                    <ion-icon name="location-outline"></ion-icon>
+                  </div>
+                  <ion-label>JOONDALUP RESORT COUNTRY
+                    CLUB BOULEVARD, CONNOLLY</ion-label>
+                </div>
+              </ion-col>
+              <ion-col size="12">
+                <div class="d-flex">
+                  <div>
+                    <ion-icon name="stopwatch-outline"></ion-icon>
+                  </div>
+                  <ion-label>Macquarie</ion-label>
+                </div>
+              </ion-col>
+              <ion-col size="12">
+                <div class="d-flex">
+                  <div>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                  </div>
+                  <ion-label>
+                    PLAYER REGISTRATION INCLUDES:<br />
+                    • Lunch on arrival<br />
+                    • Golf buggy<br />
+                    • On-course drink vouchers<br />
+                    • 18 holes of golf on “The Lakes” &
+                    “The Quarry”<br />
+                    • Novelty holes & on-course refreshments<br />
+                    • Pre-dinner drinks<br />
+                    - Post-golf dinner and drinks function<br />
+                    • Door prize and auction items on offer<br />
+                    • Joondalup Resort offers 10% discount<br />
+                    on apparel at Pro Shop,<br />
+                    accommodation discount for
+                    IFA members, and discounted club hire.
+                  </ion-label>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12">
+        <div class="text">Event Organiser</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-card mode="ios">
+          <ion-card-header>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-row>
+              <ion-col size="12">
+                <div class="d-flex">
+                  <div>
+                    <ion-icon name="person-outline"></ion-icon>
+                  </div>
+                  <ion-label>Jamie Hood</ion-label>
+                </div>
+              </ion-col>
+              <ion-col size="12">
+                <div class="d-flex">
+                  <div>
+                    <ion-icon name="call-outline"></ion-icon>
+                  </div>
+                  <ion-label>02 4369 0055</ion-label>
+                </div>
+              </ion-col>
+              <ion-col size="12">
+                <div class="d-flex">
+                  <div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                  </div>
+                  <ion-label>admin@ifassociation.com.au</ion-label>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12" class="text-right">
+        <button class="btn btn-delete-group">REPORT</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

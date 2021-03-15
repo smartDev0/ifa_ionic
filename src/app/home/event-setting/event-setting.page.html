@@ -1,9 +1,156 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>event-setting</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content mode="ios" fullscreen>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <div class="d-flex justify-content-space-between align-items-center">
+          <div class="title">Edit Your Event</div>
+          <div>
+            <button class="btn btn-standard-back m-l-3" routerLink="/home/event-item/1">
+              <ion-icon name="arrow-back-outline"></ion-icon> Back
+            </button>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <div class="d-flex justify-content-space-between align-items-center">
+          <div class="text">Attendee's:</div>
+          <div>
+            <button class="btn btn-standard">
+              Invite
+            </button>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
 
-<ion-content>
+        <ion-card mode="ios">
+          <ion-card-content>
+            <div class="card-item" *ngFor="let item of items">
 
+              <div class="card-left">
+                <img src="{{item.img}}" />
+                <ion-label class="ion-text">
+                  <h5>{{item.name}}</h5>
+                  <p>{{item.role}}</p>
+                </ion-label>
+              </div>
+              <div class="card-right">
+                <ion-label>
+                  <button class="btn btn-invite">MAKE ADMIN</button>
+                </ion-label>
+              </div>
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <div class="d-flex justify-content-space-between align-items-center">
+          <div class="text">Event Details</div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card mode="ios">
+          <ion-card mode="ios">
+            <ion-card-content>
+              <form>
+                <ion-row>
+                  <ion-col size="12">
+                    <div class="form-label-group">
+                      <label class="form-label">
+                        Event Title:
+                      </label>
+                      <input class="form-input form-control" type="text" type="name" required />
+                    </div>
+                  </ion-col>
+                  <ion-col size="6">
+                    <div class="form-label-group">
+                      <label class="form-label">
+                        Start Date & Time
+                      </label>
+                      <ion-datetime class="form-input form-control form-input-date" display-format="YYYY/MM/DD h:mm A"
+                        picker-format="h:mm A"></ion-datetime>
+                    </div>
+                  </ion-col>
+                  <ion-col size="6">
+                    <div class="form-label-group">
+                      <label class="form-label">
+                        End Date & Time
+                      </label>
+                      <ion-datetime class="form-input form-control form-input-date" display-format="YYYY/MM/DD h:mm A"
+                        picker-format="h:mm A"></ion-datetime>
+                    </div>
+                  </ion-col>
+                  <ion-col size="12">
+                    <div class="form-label-group">
+                      <label class="form-label">
+                        Location:
+                      </label>
+                      <input class="form-input form-control" type="text" type="name" required />
+                    </div>
+                  </ion-col>
+                  <ion-col size="12">
+                    <div class="form-label-group">
+                      <label class="form-label">
+                        Timezone:
+                      </label>
+                      <input class="form-input form-control" type="text" type="name" required />
+                    </div>
+                  </ion-col>
+                  <ion-col size="12">
+                    <div class="form-label-group">
+                      <label class="form-label">
+                        Event Description:
+                      </label>
+                      <textarea class="form-textarea" rows="5"></textarea>
+                    </div>
+                  </ion-col>
+                  <ion-col size="12">
+                    <div class="form-label-group">
+                      <label class="form-label">
+                        Upload Cover Image
+                      </label>
+                      <div>
+                        <button class="btn btn-upload">SELECT FILES</button>
+                      </div>
+                    </div>
+                  </ion-col>
+                  <ion-col size="12">
+                    <div class="form-label-group">
+                      <label class="form-label">
+                        Select Category:
+                      </label>
+                      <ion-item class="custom-item" lines="none" mode="md">
+                        <ion-label>Category</ion-label>
+                        <ion-select multiple="true" placeholder="Select Category">
+                          <ion-select-option value="Public">Public</ion-select-option>
+                          <ion-select-option value="Private">Private</ion-select-option>
+                        </ion-select>
+                      </ion-item>
+                    </div>
+                  </ion-col>
+                  <ion-col size="12">
+                    <button class="btn btn-standard w-100">SAVE EVENT</button>
+                  </ion-col>
+                </ion-row>
+              </form>
+            </ion-card-content>
+          </ion-card>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" class="text-right">
+        <button class="btn btn-delete-group">DELETE EVENT</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
