@@ -13,6 +13,6 @@ export class ForgotConfirmPage implements OnInit {
   ngOnInit() {}
 
   submitForm() {
-    this.route.navigate(['/home']);
+    this.route.navigate(['/home/member']);
   }
 }
