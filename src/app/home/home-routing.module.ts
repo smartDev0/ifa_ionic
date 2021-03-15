@@ -43,6 +43,32 @@ const routes: Routes = [
             (m) => m.GroupSettingPageModule
           ),
       },
+      {
+        path: 'event',
+        loadChildren: () =>
+          import('./event/event.module').then((m) => m.EventPageModule),
+      },
+      {
+        path: 'event-item/:id',
+        loadChildren: () =>
+          import('./event-item/event-item.module').then(
+            (m) => m.EventItemPageModule
+          ),
+      },
+      {
+        path: 'event-create',
+        loadChildren: () =>
+          import('./event-create/event-create.module').then(
+            (m) => m.EventCreatePageModule
+          ),
+      },
+      {
+        path: 'event-setting/:id',
+        loadChildren: () =>
+          import('./event-setting/event-setting.module').then(
+            (m) => m.EventSettingPageModule
+          ),
+      },
     ],
   },
 ];
