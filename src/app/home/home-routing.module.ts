@@ -191,6 +191,18 @@ const routes: Routes = [
         loadChildren: () =>
           import('./sponsor/sponsor.module').then((m) => m.SponsorPageModule),
       },
+      {
+        path: 'profile',
+        loadChildren: () =>
+          import('./profile/profile.module').then((m) => m.ProfilePageModule),
+      },
+      {
+        path: 'profile-setting',
+        loadChildren: () =>
+          import('./profile-setting/profile-setting.module').then(
+            (m) => m.ProfileSettingPageModule
+          ),
+      },
     ],
   },
 ];
