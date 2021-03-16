@@ -123,6 +123,41 @@ const routes: Routes = [
             (m) => m.ResourceItemPageModule
           ),
       },
+      {
+        path: 'job-listing',
+        loadChildren: () =>
+          import('./job-listing/job-listing.module').then(
+            (m) => m.JobListingPageModule
+          ),
+      },
+      {
+        path: 'job-listing-create',
+        loadChildren: () =>
+          import('./job-listing-create/job-listing-create.module').then(
+            (m) => m.JobListingCreatePageModule
+          ),
+      },
+      {
+        path: 'job-listing-item/:id',
+        loadChildren: () =>
+          import('./job-listing-item/job-listing-item.module').then(
+            (m) => m.JobListingItemPageModule
+          ),
+      },
+      {
+        path: 'job-listing-setting/:id',
+        loadChildren: () =>
+          import('./job-listing-setting/job-listing-setting.module').then(
+            (m) => m.JobListingSettingPageModule
+          ),
+      },
+      {
+        path: 'job-listing-apply/:id',
+        loadChildren: () =>
+          import('./job-listing-apply/job-listing-apply.module').then(
+            (m) => m.JobListingApplyPageModule
+          ),
+      },
     ],
   },
 ];
