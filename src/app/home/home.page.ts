@@ -31,7 +31,7 @@ export class HomePage {
     {
       icon: 'book-outline',
       name: 'Resource Library',
-      router: 'home/resource-library',
+      router: 'home/resource',
     },
 
     {

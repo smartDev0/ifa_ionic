@@ -95,6 +95,34 @@ const routes: Routes = [
             (m) => m.StoreItemPageModule
           ),
       },
+      {
+        path: 'resource',
+        loadChildren: () =>
+          import('./resource/resource.module').then(
+            (m) => m.ResourcePageModule
+          ),
+      },
+      {
+        path: 'resource-create',
+        loadChildren: () =>
+          import('./resource-create/resource-create.module').then(
+            (m) => m.ResourceCreatePageModule
+          ),
+      },
+      {
+        path: 'resource-setting/:id',
+        loadChildren: () =>
+          import('./resource-setting/resource-setting.module').then(
+            (m) => m.ResourceSettingPageModule
+          ),
+      },
+      {
+        path: 'resource-item/:id',
+        loadChildren: () =>
+          import('./resource-item/resource-item.module').then(
+            (m) => m.ResourceItemPageModule
+          ),
+      },
     ],
   },
 ];
