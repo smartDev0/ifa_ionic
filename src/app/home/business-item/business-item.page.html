@@ -1,9 +1,138 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>business-item</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content fullscreen class="business-item">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <div class="d-flex justify-content-space-between align-items-center">
+          <button class="btn btn-standard-back m-l-3" routerLink="/home/business">
+            <ion-icon name="arrow-back-outline"></ion-icon> Back
+          </button>
 
-<ion-content>
-
+          <div>
+            <button class="btn btn-standard">
+              JOIN <ion-icon name="person-add-outline"></ion-icon>
+            </button>
+            <button class="btn btn-standard-setting m-l-3" routerLink="/home/business-setting/1">
+              Setting <ion-icon name="settings-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card mode="ios" class="text-center">
+          <img src="./assets/imgs/business.png" />
+          <img src="./assets/imgs/business-card.png" class="card-item" />
+          <ion-card-header>
+            <ion-card-title>
+              Midland Insurance Brokers
+            </ion-card-title>
+            <ion-card-subtitle class="standard-color">Principal Partner</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3">
+        <button class="btn btn-filter-active w-100">
+          <ion-icon name="document-text-outline"></ion-icon>
+          <div class="btn-text">
+            ACTIVITY
+          </div>
+        </button>
+      </ion-col>
+      <ion-col size="3">
+        <button class="btn btn-filter w-100">
+          <ion-icon name="book-outline"></ion-icon>
+          <div class="btn-text">
+            EVENTS
+          </div>
+        </button>
+      </ion-col>
+      <ion-col size="3">
+        <button class="btn btn-filter w-100">
+          <ion-icon name="people-outline"></ion-icon>
+          <div class="btn-text">
+            STORE
+          </div>
+        </button>
+      </ion-col>
+      <ion-col size="3">
+        <button class="btn btn-filter w-100">
+          <ion-icon name="videocam-outline"></ion-icon>
+          <div class="btn-text">
+            VIDEOS
+          </div>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <div>
+          <img src="./assets/imgs/avatar.png" class="post-input-img" />
+          <input class="post-input" type="text" placeholder="Post to this Business" />
+          <img src="./assets/imgs/search-button.png" class="search-input-img" />
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card mode="ios">
+          <img src="./assets/imgs/business-bg.png" />
+          <ion-card-header>
+            <div class="ion-card-header">
+              <div class="card-header-left">
+                <img src="assets/imgs/avatar.png" />
+                <ion-label class="ion-text">
+                  <h5>IFA Head Office</h5>
+                  <p>Association Specailist</p>
+                </ion-label>
+              </div>
+              <div class="card-header-right">
+                <ion-label>
+                  <p>
+                    Posted: 30min ago
+                  </p>
+                </ion-label>
+              </div>
+            </div>
+          </ion-card-header>
+          <ion-card-content>
+            <h5 class="ion-content-text">
+              2019 Member Communications Survey – New report
+              Mahlab, who specialises in associations communications and publications, have just released its 2019 Member
+              Communications Survey, which includes advice and insights from more than 100 leading Australian associations.
+              <br/><br />
+              The report covers everything from challenges faced by associations to their approach to strategy, preferred
+              communication channels and the importance of advocacy for members. It also includes tips to better engage with your
+              members.
+              <br /><br />
+              If you have any questions about the report, you can reach Jessica Ferland from Mahlab at
+              02 9556 9100 or via email jessica@mahlab.co.
+            </h5>
+            <br/>
+            <p>
+              #governance #assocaitionhelp #executive-guides
+            </p>
+            <div class="card-footer">
+              <ion-buttons>
+                <ion-icon name="thumbs-up-outline"></ion-icon>
+                <ion-label> Like </ion-label>
+              </ion-buttons>
+              <ion-buttons>
+                <ion-icon name="chatbox-outline"></ion-icon>
+                <ion-label> Comments</ion-label>
+              </ion-buttons>
+              <ion-buttons>
+                <ion-icon name="share-social-outline"></ion-icon>
+                <ion-label> Share</ion-label>
+              </ion-buttons>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
