@@ -158,6 +158,39 @@ const routes: Routes = [
             (m) => m.JobListingApplyPageModule
           ),
       },
+      {
+        path: 'business',
+        loadChildren: () =>
+          import('./business/business.module').then(
+            (m) => m.BusinessPageModule
+          ),
+      },
+      {
+        path: 'business-create',
+        loadChildren: () =>
+          import('./business-create/business-create.module').then(
+            (m) => m.BusinessCreatePageModule
+          ),
+      },
+      {
+        path: 'business-item/:id',
+        loadChildren: () =>
+          import('./business-item/business-item.module').then(
+            (m) => m.BusinessItemPageModule
+          ),
+      },
+      {
+        path: 'business-setting/:id',
+        loadChildren: () =>
+          import('./business-setting/business-setting.module').then(
+            (m) => m.BusinessSettingPageModule
+          ),
+      },
+      {
+        path: 'sponsor',
+        loadChildren: () =>
+          import('./sponsor/sponsor.module').then((m) => m.SponsorPageModule),
+      },
     ],
   },
 ];
