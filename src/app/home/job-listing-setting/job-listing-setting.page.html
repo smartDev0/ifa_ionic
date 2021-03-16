@@ -1,9 +1,159 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>job-listing-setting</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content mode="ios" fullscreen class="job-listing-setting">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <div class="d-flex justify-content-space-between align-items-center">
+          <div class="title">Edit Job Listing</div>
+          <div>
+            <button class="btn btn-standard-back m-l-3" routerLink="/home/job-listing-item/1">
+              <ion-icon name="arrow-back-outline"></ion-icon> Back
+            </button>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <div class="d-flex justify-content-space-between align-items-center">
+          <div class="text standard-color">Applicants</div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
 
-<ion-content>
+        <ion-card mode="ios">
+          <ion-card-content>
+            <div class="card-item" *ngFor="let item of items">
 
+              <div class="card-left">
+                <img src="{{item.img}}" />
+                <ion-label class="ion-text">
+                  <h5>{{item.name}}</h5>
+                  <p>{{item.role}}</p>
+                </ion-label>
+              </div>
+              <!-- <div class="card-right">
+                <ion-label>
+                  <button class="btn btn-invite">MAKE ADMIN</button>
+                </ion-label>
+              </div> -->
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+      <ion-col size="12">
+        <ion-card mode="ios">
+          <ion-card-content>
+            <form>
+              <ion-row>
+                <ion-col size="12">
+                  <div class="card-title standard-color">
+                    Position Details:
+                  </div>
+                </ion-col>
+                <ion-col size="12">
+                  <div class="form-label-group">
+                    <label class="form-label">
+                      Position Title:
+                    </label>
+                    <input class="form-input form-control" type="text" type="name" required />
+                  </div>
+                </ion-col>
+                <ion-col size="12">
+                  <div class="form-label-group">
+                    <label class="form-label">
+                      Employment Type:
+                    </label>
+                    <ion-select placeholder="Type" interface="action-sheet" class="custom-select" value="Full Time">
+                      <ion-select-option value="Full Time">Full Time</ion-select-option>
+                      <ion-select-option value="Part Time">Part Time</ion-select-option>
+                    </ion-select>
+                  </div>
+                </ion-col>
+                <ion-col size="12">
+                  <div class="form-label-group">
+                    <label class="form-label">
+                      Position Location:
+                    </label>
+                    <input class="form-input form-control" type="text" type="name" required />
+                  </div>
+                </ion-col>
+                <ion-col size="12">
+                  <div class="form-label-group">
+                    <label class="form-label">
+                      Position Description:
+                    </label>
+                    <textarea class="form-textarea" rows="5"></textarea>
+                  </div>
+                </ion-col>
+                <ion-col size="12">
+                  <div class="form-label-group">
+                    <label class="form-label">
+                      Select Category:
+                    </label>
+                    <ion-item class="custom-item" lines="none" mode="md">
+                      <ion-label>Category</ion-label>
+                      <ion-select multiple="true" placeholder="Select Category">
+                        <ion-select-option value="Public">Public</ion-select-option>
+                        <ion-select-option value="Private">Private</ion-select-option>
+                      </ion-select>
+                    </ion-item>
+                  </div>
+                </ion-col>
+                <ion-col size="12">
+                  <div class="card-title standard-color">
+                    Organisation Details:
+                  </div>
+                </ion-col>
+                <ion-col size="12">
+                  <div class="form-label-group">
+                    <label class="form-label">
+                      Organisation Name:
+                    </label>
+                    <input class="form-input form-control" type="text" type="name" required />
+                  </div>
+                </ion-col>
+                <ion-col size="12">
+                  <div class="form-label-group">
+                    <label class="form-label">
+                      Number of Employees
+                    </label>
+                    <ion-select placeholder="Type" interface="action-sheet" class="custom-select" value="Full Time">
+                      <ion-select-option value="Full Time">Full Time</ion-select-option>
+                      <ion-select-option value="Part Time">Part Time</ion-select-option>
+                    </ion-select>
+                  </div>
+                </ion-col>
+                <ion-col size="12">
+                  <div class="form-label-group">
+                    <label class="form-label">
+                      Main Office Location:
+                    </label>
+                    <input class="form-input form-control" type="text" type="name" required />
+                  </div>
+                </ion-col>
+                <ion-col size="12">
+                  <div class="form-label-group">
+                    <label class="form-label">
+                      What makes your organisation unique?
+                    </label>
+                    <textarea class="form-textarea" rows="5"></textarea>
+                  </div>
+                </ion-col>
+                <ion-col size="12"><button class="btn btn-standard w-100">SAVE JOB LISTING</button></ion-col>
+              </ion-row>
+            </form>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" class="text-right">
+        <button class="btn btn-delete-group">DELETE JOB</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

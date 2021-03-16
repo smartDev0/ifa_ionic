@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./job-listing-setting.page.scss'],
 })
 export class JobListingSettingPage implements OnInit {
+  public items = [
+    {
+      name: 'Patrick Lee',
+      role: 'Velit suspendisse ',
+      img: 'assets/imgs/avatar.png',
+    },
+    {
+      name: 'PAssociation Annie',
+      role: 'Velit suspendisse ',
+      img: 'assets/imgs/avatar.png',
+    },
+  ];
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
