@@ -1,21 +1,5 @@
 
 
-.post-input-img {
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  margin-left: 5px;
-  margin-top: 5px;
-}
-
-.search-input-img {
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  right: 10px;
-  margin-top: -31px;
-  cursor: pointer;
-}
 
 ion-card {
   margin: 0px;
@@ -92,30 +76,4 @@ ion-card {
   }
 }
 
-.footer {
 
-  background: linear-gradient(118deg, #f18c20, #f1b420);
-
-  p {
-    font-size: 6px;
-    color: white;
-    vertical-align: middle;
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-  }
-
-  .social-link-group {
-    display: flex;
-    align-items: center;
-
-    .social-link {
-      width: 22px;
-      /* height: 20px; */
-      padding: 0 1px;
-    }
-  }
-
-}
