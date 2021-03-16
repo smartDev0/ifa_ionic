@@ -1,0 +1,80 @@
+.job-listing-apply {
+  .title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  ion-card {
+    margin: 0px;
+
+    ion-card-header {
+      padding: 10px 8px 8px 8px;
+
+      img {
+        width: 100%;
+      }
+
+      ion-card-title {
+        font-size: 16px;
+        cursor: pointer;
+        text-align: left;
+      }
+
+      ion-card-subtitle {
+        font-size: 13px;
+        cursor: pointer;
+        font-weight: 400;
+        text-align: left;
+      }
+
+      .card-text {
+        font-size: 12px;
+        text-align: left;
+      }
+    }
+
+    ion-card-content {
+      padding: 12px 8px 12px 8px;
+
+      .card-title {
+        font-size: 16px;
+      }
+
+    }
+  }
+
+  .form-label-group {
+
+    .custom-select {
+      // color: #4e5154;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      font-size: 13px;
+      height: 36px;
+    }
+
+    .custom-item {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .custom-checkbox {
+      ion-checkbox {
+        margin: 0px 10px 0 0 !important;
+      }
+
+      ion-label {
+        font-size: 10px;
+
+        a {
+          color: black;
+          text-decoration: solid;
+          cursor: pointer;
+        }
+      }
+    }
+
+  }
+
+}
